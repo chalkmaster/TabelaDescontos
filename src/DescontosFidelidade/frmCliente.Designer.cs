@@ -42,7 +42,7 @@
             this.btnSalvar = new System.Windows.Forms.Button();
             this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Produto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PreçoTabela = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PrecoTabela = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PrecoVenda = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDescontos)).BeginInit();
             this.SuspendLayout();
@@ -124,7 +124,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(493, 66);
+            this.label4.Location = new System.Drawing.Point(532, 66);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(49, 13);
             this.label4.TabIndex = 5;
@@ -139,7 +139,7 @@
             this.dgvDescontos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Codigo,
             this.Produto,
-            this.PreçoTabela,
+            this.PrecoTabela,
             this.PrecoVenda});
             this.dgvDescontos.Location = new System.Drawing.Point(12, 141);
             this.dgvDescontos.Name = "dgvDescontos";
@@ -181,10 +181,10 @@
             this.Produto.Name = "Produto";
             this.Produto.Width = 300;
             // 
-            // PreçoTabela
+            // PrecoTabela
             // 
-            this.PreçoTabela.HeaderText = "Preco Tabela";
-            this.PreçoTabela.Name = "PreçoTabela";
+            this.PrecoTabela.HeaderText = "Preço Tabela";
+            this.PrecoTabela.Name = "PrecoTabela";
             // 
             // PrecoVenda
             // 
@@ -233,7 +233,7 @@
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.DataGridViewTextBoxColumn Codigo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Produto;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PreçoTabela;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PrecoTabela;
         private System.Windows.Forms.DataGridViewTextBoxColumn PrecoVenda;
     }
 }

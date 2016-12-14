@@ -37,5 +37,17 @@ namespace DescontosFidelidade
             frm.WindowState = FormWindowState.Maximized;
             frm.Show();
         }
+
+        private void frmPrincipal_Load(object sender, EventArgs e)
+        {
+            if (!DbHelper.ExistsDataBase())
+                if (!DbHelper.CanRestoreDataBase())
+                    DbHelper.CreateNewDataBase();
+        }
+
+        private void frmPrincipal_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DbHelper.Backup();
+        }
     }
 }

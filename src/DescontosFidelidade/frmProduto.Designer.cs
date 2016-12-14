@@ -31,10 +31,10 @@
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnSair = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
             this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Produto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Preco = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -43,7 +43,7 @@
             this.btnSalvar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSalvar.BackColor = System.Drawing.Color.Green;
             this.btnSalvar.ForeColor = System.Drawing.Color.White;
-            this.btnSalvar.Location = new System.Drawing.Point(302, 401);
+            this.btnSalvar.Location = new System.Drawing.Point(369, 401);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(123, 33);
             this.btnSalvar.TabIndex = 1;
@@ -56,7 +56,7 @@
             this.btnSair.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSair.BackColor = System.Drawing.Color.DarkRed;
             this.btnSair.ForeColor = System.Drawing.Color.White;
-            this.btnSair.Location = new System.Drawing.Point(431, 401);
+            this.btnSair.Location = new System.Drawing.Point(498, 401);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(123, 33);
             this.btnSair.TabIndex = 2;
@@ -76,17 +76,8 @@
             this.Preco});
             this.dataGridView1.Location = new System.Drawing.Point(12, 28);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(542, 367);
+            this.dataGridView1.Size = new System.Drawing.Size(609, 367);
             this.dataGridView1.TabIndex = 3;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 13);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Edição de Produtos";
             // 
             // Codigo
             // 
@@ -104,11 +95,20 @@
             this.Preco.HeaderText = "Valor de Tabela";
             this.Preco.Name = "Preco";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(100, 13);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Edição de Produtos";
+            // 
             // frmProduto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(566, 446);
+            this.ClientSize = new System.Drawing.Size(633, 446);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnSalvar);
