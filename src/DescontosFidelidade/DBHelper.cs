@@ -50,10 +50,12 @@ namespace DescontosFidelidade
             if (File.Exists(localAppData))
             {
                 File.Copy(localAppData, DataBaseLocation);
+                File.SetAttributes(DataBaseLocation, FileAttributes.Hidden);
                 return true;
             } else if (File.Exists(localProgramFiles))
             {
                 File.Copy(localProgramFiles, DataBaseLocation);
+                File.SetAttributes(DataBaseLocation, FileAttributes.Hidden);
                 return true;
             }
             return false;
