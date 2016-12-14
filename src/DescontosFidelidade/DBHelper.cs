@@ -93,6 +93,9 @@ namespace DescontosFidelidade
 
             File.Copy(DataBaseLocation, BackupDocumentsPath + DbFileName, true);
             File.Copy(DataBaseLocation, BackupAppDataPath + DbFileName, true);
+
+            File.SetAttributes(BackupDocumentsPath + DbFileName, FileAttributes.Normal);
+            File.SetAttributes(BackupAppDataPath + DbFileName, FileAttributes.Normal);
         }
     }
 }
