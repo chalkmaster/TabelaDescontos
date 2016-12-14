@@ -10,7 +10,7 @@ namespace DescontosFidelidade
 {
     public static class DbHelper
     {
-        public const string DbFileName = @"Dados.db";
+        public const string DbFileName = @".dados";
         public static string BackupAppDataPath
         {
             get
@@ -62,6 +62,8 @@ namespace DescontosFidelidade
         public static void CreateNewDataBase()
         {
             SQLiteConnection.CreateFile(DataBaseLocation);
+            File.SetAttributes(DataBaseLocation, FileAttributes.Hidden);
+
             using (var cn = new SQLiteConnection("Data Source=" + DataBaseLocation))
             {
                 cn.Open();
@@ -89,8 +91,8 @@ namespace DescontosFidelidade
             Directory.CreateDirectory(BackupDocumentsPath);
             Directory.CreateDirectory(BackupAppDataPath);
 
-            File.Copy(DataBaseLocation, BackupDocumentsPath + DbFileName);
-            File.Copy(DataBaseLocation, BackupAppDataPath + DbFileName);
+            File.Copy(DataBaseLocation, BackupDocumentsPath + DbFileName, true);
+            File.Copy(DataBaseLocation, BackupAppDataPath + DbFileName, true);
         }
     }
 }
